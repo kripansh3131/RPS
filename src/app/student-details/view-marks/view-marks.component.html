@@ -1,1 +1,78 @@
-<p>view-marks works!</p>
+<div class="row">
+    <div class="col-2"></div>
+    <div class="col-3 form-inline">
+        <div class="form-group">
+            <label for="exampleFormControlSelect1" style="font-size: larger; font-weight: bold;">Semester</label>
+            <select class="form-control" id="exampleFormControlSelect1" style="margin-left: 20px;" name="Gender">
+              <option *ngFor="let Semester of Semesters">{{Semester}}</option>
+            </select>
+        </div>
+    </div>
+    <button class="btn btn-primary" style="position: absolute;right: 24%;top: 10%;" (click)="openUpdateMarks()">Update Marks</button>
+    <button class="btn btn-primary" style="position: absolute;right: 8%;top: 10%;" (click)="openAddMarks()">Add Next Semester Marks</button>
+    <br><br><br><br>
+</div>
+<div class="col-8" style="position: absolute; left: 16%;">
+    <table class="table table-bordered">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col" rowspan="2">#</th>
+            <th scope="col" rowspan="2">Subject Code</th>
+            <th scope="col" colspan="2">Credit Hours</th>
+            <th scope="col" colspan="3">Marks Obtained</th>
+            <th scope="col" rowspan="2">Total Theory Marks</th>
+            <th scope="col" rowspan="2">Overall Marks</th>
+            <th scope="col" rowspan="2">Grade Points</th>
+            <th scope="col" rowspan="2">Credit Points</th>
+          </tr>
+          <tr>
+            <th scope="col">Theory</th>
+            <th scope="col">Practical</th>
+            <th scope="col">Theory</th>
+            <th scope="col">Practical</th>
+            <th scope="col">Mid-Term</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry </td>
+            <td>Bird</td>
+            <td>@twitter</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>@mdo</td>
+          </tr>
+        </tbody>
+    </table>
+</div>

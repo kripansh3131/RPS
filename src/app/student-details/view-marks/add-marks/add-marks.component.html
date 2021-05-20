@@ -1,1 +1,67 @@
-<p>add-marks works!</p>
+<div class="modal-header">
+    <h4 class="modal-title">Add Marks</h4>
+    <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<div class="modal-body">
+    <h5>Semester</h5>
+    <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col" rowspan="2">#</th>
+            <th scope="col" rowspan="2">Subject Code</th>
+            <th scope="col" colspan="3">Marks Obtained</th>
+          </tr>
+          <tr>
+            <th scope="col">Theory</th>
+            <th scope="col">Practical</th>
+            <th scope="col">Mid-Term</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>
+                <input type="number" class="form-control" id="exampleInput1" name="Theory Marks">
+            </td>
+            <td>
+                <input type="number" class="form-control" id="exampleInput2" name="Practical Marks">
+            </td>
+            <td>
+                <input type="number" class="form-control" id="exampleInput3" name="Mid-Term Marks">
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>
+                <input type="number" class="form-control" id="exampleInput1" name="Theory Marks">
+            </td>
+            <td>
+                <input type="number" class="form-control" id="exampleInput2" name="Practical Marks">
+            </td>
+            <td>
+                <input type="number" class="form-control" id="exampleInput3" name="Mid-Term Marks">
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry </td>
+            <td>
+                <input type="number" class="form-control" id="exampleInput1" name="Theory Marks">
+            </td>
+            <td>
+                <input type="number" class="form-control" id="exampleInput2" name="Practical Marks">
+            </td>
+            <td>
+                <input type="number" class="form-control" id="exampleInput3" name="Mid-Term Marks">
+            </td>
+          </tr>
+        </tbody>
+    </table>
+    <div class="div">
+        <button type="submit" class="btn btn-success" style="float: right; margin-bottom: 2%;" (click)="activeModal.dismiss('Cross click')">Add Marks</button>
+    </div>
+</div>

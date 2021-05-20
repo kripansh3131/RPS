@@ -1,1 +1,49 @@
-<p>edit-student-details works!</p>
+<div class="modal-header">
+    <h4 class="modal-title">Edit Student Details</h4>
+    <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<div class="modal-body">
+    <form>
+        <div class="form-group">
+            <label for="exampleInput1">Enrollment Number</label>
+            <input type="text" class="form-control" id="exampleInputExpense1" name="Enrollment Number">
+        </div>
+        <div class="form-group">
+            <label for="exampleInput2">Full Name</label>
+            <input type="text" class="form-control" id="exampleInput2" name="Full Name">
+        </div>
+        <div class="form-group">
+            <label for="exampleInput3">Father's Name</label>
+            <input type="text" class="form-control" id="exampleInput3" name="Father's Name">
+        </div>
+        <div class="form-group">
+            <label for="exampleInput4">Mother's Name</label>
+            <input type="text" class="form-control" id="exampleInput4" name="Mother's Name">
+        </div>
+        <div class="form-group">
+          <label for="exampleInput5">Date of Birth</label>
+          <input type="date" class="form-control" id="exampleInput5" name="date">
+        </div> 
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">Gender</label>
+            <select class="form-control" id="exampleFormControlSelect1" name="Gender">
+              <option *ngFor="let Gender of Genders">{{Gender}}</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="exampleInput6">Branch</label>
+            <input type="text" class="form-control" id="exampleInput6" name="Branch">
+        </div> 
+        <div class="form-group">
+            <label for="exampleInput7">E-mail</label>
+            <input type="email" class="form-control" id="exampleInput7" name="E-mail">
+        </div>
+        <div class="form-group">
+            <label for="exampleInput8">Contact Number</label>
+            <input type="number" class="form-control" id="exampleInput8" name="Contact Number">
+        </div>
+        <button type="submit" class="btn btn-success" style="float: right; margin-bottom: 2%;" (click)="activeModal.dismiss('Cross click')">Update</button>
+    </form>
+</div>
